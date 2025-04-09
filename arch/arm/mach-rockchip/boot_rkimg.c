@@ -486,8 +486,10 @@ static int rockchip_read_distro_dtb(void *fdt_addr)
 
 int rockchip_read_dtb_file(void *fdt_addr)
 {
+#ifdef CONFIG_ROCKCHIP_RESOURCE_IMAGE
 	int hash_size;
 	char *hash;
+#endif
 	u32 size;
 	int ret = -1;
 

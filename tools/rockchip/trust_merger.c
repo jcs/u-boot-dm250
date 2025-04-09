@@ -269,7 +269,7 @@ static bool parseOpts(void)
 	file = fopen(configPath, "r");
 	if (!file) {
 		fprintf(stderr, "config(%s) not found!\n", configPath);
-		if (configPath == (char *)DEF_CONFIG_FILE) {
+		if (strcmp(configPath, (char *)DEF_CONFIG_FILE) == 0) {
 			file = fopen(DEF_CONFIG_FILE, "w");
 			if (file) {
 				fprintf(stderr, "create defconfig\n");

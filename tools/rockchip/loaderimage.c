@@ -102,7 +102,6 @@ void usage(const char *prog)
 
 unsigned int str2hex(char *str)
 {
-	int i = 0;
 	unsigned int value = 0;
 
 	if (*str == '0' && (*(str + 1) == 'x' || *(str + 1) == 'X'))
@@ -110,7 +109,7 @@ unsigned int str2hex(char *str)
 	if (*str == 'x' || *str == 'X')
 		str += 1;
 
-	for (i = 0; *str != '\0'; i++, ++str) {
+	for (; *str != '\0'; ++str) {
 		if (*str >= '0' && *str <= '9')
 			value = value * 16 + *str - '0';
 		else if (*str >= 'a' && *str <= 'f')
