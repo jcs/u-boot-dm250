@@ -11,6 +11,12 @@ config TARGET_EVB_RK3128
 	  with full function and phisical connectors support like
 	  usb2.0 host ports, LVDS, JTAG, MAC, SDcard, HDMI, USB-2-serial...
 
+config TARGET_KINGJIM_DM250
+	bool "KING JIM Pomera DM250"
+	select BOARD_LATE_INIT
+	help
+          KING JIM Pomera DM250 digital typewriter
+
 endchoice
 
 config SYS_SOC
@@ -20,5 +26,6 @@ config SYS_MALLOC_F_LEN
 	default 0x0800
 
 source "board/rockchip/evb_rk3128/Kconfig"
+source "board/kingjim/dm250/Kconfig"
 
 endif

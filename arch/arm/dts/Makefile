@@ -49,8 +49,8 @@ dtb-$(CONFIG_ARCH_ROCKCHIP) += \
 	rk3399-puma-ddr1333.dtb \
 	rk3399-puma-ddr1600.dtb \
 	rk3399-puma-ddr1866.dtb \
-	rv1108-evb.dtb
-
+	rv1108-evb.dtb \
+	kingjim-dm250.dtb
 #	rk3036-sdk.dtb \
 #	rk3188-radxarock.dtb \
 #	rk3328-evb.dtb \

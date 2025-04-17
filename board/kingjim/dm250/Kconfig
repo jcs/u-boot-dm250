@@ -1,0 +1,15 @@
+if TARGET_KINGJIM_DM250
+
+config SYS_BOARD
+	default "dm250"
+
+config SYS_VENDOR
+	default "kingjim"
+
+config SYS_CONFIG_NAME
+	default "kingjim_dm250"
+
+config BOARD_SPECIFIC_OPTIONS # dummy
+	def_bool y
+
+endif
