@@ -97,6 +97,7 @@ struct rk3128_pmu {
 check_member(rk3128_pmu, int_st, 0x34);
 
 /* GRF_GPIO0A_IOMUX */
+#define GRF_GPIO0A_IOMUX	0x00a8
 enum {
 	GPIO0A7_SHIFT		= 14,
 	GPIO0A7_MASK		= 3 << GPIO0A7_SHIFT,
@@ -130,6 +131,7 @@ enum {
 };
 
 /* GRF_GPIO0B_IOMUX */
+#define GRF_GPIO0B_IOMUX	0x00ac
 enum {
 	GPIO0B6_SHIFT		= 12,
 	GPIO0B6_MASK		= 3 << GPIO0B6_SHIFT,
@@ -167,6 +169,7 @@ enum {
 };
 
 /* GRF_GPIO0D_IOMUX */
+#define GRF_GPIO0D_IOMUX	0x00b4
 enum {
 	GPIO0D4_SHIFT		= 8,
 	GPIO0D4_MASK		= 1 << GPIO0D4_SHIFT,
@@ -196,6 +199,7 @@ enum {
 };
 
 /* GRF_GPIO1A_IOMUX */
+#define GRF_GPIO1A_IOMUX	0x00b8
 enum {
 	GPIO1A5_SHIFT		= 10,
 	GPIO1A5_MASK		= 3 << GPIO1A5_SHIFT,
@@ -237,6 +241,7 @@ enum {
 };
 
 /* GRF_GPIO1B_IOMUX */
+#define GRF_GPIO1B_IOMUX	0x00bc
 enum {
 	GPIO1B7_SHIFT		= 14,
 	GPIO1B7_MASK		= 1 << GPIO1B7_SHIFT,
@@ -268,6 +273,7 @@ enum {
 };
 
 /* GRF_GPIO1C_IOMUX */
+#define GRF_GPIO1C_IOMUX	0x00c0
 enum {
 	GPIO1C6_SHIFT		= 12,
 	GPIO1C6_MASK		= 3 << GPIO1C6_SHIFT,
@@ -311,6 +317,7 @@ enum {
 };
 
 /* GRF_GPIO1D_IOMUX */
+#define GRF_GPIO1D_IOMUX	0x00c4
 enum {
 	GPIO1D7_SHIFT		= 14,
 	GPIO1D7_MASK		= 3 << GPIO1D7_SHIFT,
@@ -370,6 +377,7 @@ enum {
 };
 
 /* GRF_GPIO2A_IOMUX */
+#define GRF_GPIO2A_IOMUX	0x00c8
 enum {
 	GPIO2A7_SHIFT		= 14,
 	GPIO2A7_MASK		= 3 << GPIO2A7_SHIFT,
@@ -421,6 +429,7 @@ enum {
 };
 
 /* GRF_GPIO2B_IOMUX */
+#define GRF_GPIO2B_IOMUX	0x00cc
 enum {
 	GPIO2B7_SHIFT		= 14,
 	GPIO2B7_MASK		= 3 << GPIO2B7_SHIFT,
@@ -480,6 +489,7 @@ enum {
 };
 
 /* GRF_GPIO2C_IOMUX */
+#define GRF_GPIO2C_IOMUX	0x00d0
 enum {
 	GPIO2C3_SHIFT		= 6,
 	GPIO2C3_MASK		= 3 << GPIO2C3_SHIFT,
@@ -511,6 +521,7 @@ enum {
 };
 
 /* GRF_GPIO2D_IOMUX */
+#define GRF_GPIO2D_IOMUX	0x00d4
 enum {
 	GPIO2D6_SHIFT		= 12,
 	GPIO2D6_MASK		= 3 << GPIO2D6_SHIFT,
@@ -525,6 +536,7 @@ enum {
 };
 
 /* GRF_GPIO2C_IOMUX2 */
+#define GRF_GPIO2C_IOMUX2	0x00e8
 enum {
 	GPIO2C7_SHIFT		= 12,
 	GPIO2C7_MASK		= 7 << GPIO2C7_SHIFT,

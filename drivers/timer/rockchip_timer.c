@@ -152,6 +152,7 @@ static const struct timer_ops rockchip_timer_ops = {
 };
 
 static const struct udevice_id rockchip_timer_ids[] = {
+	{ .compatible = "rockchip,rk3128-timer" },
 	{ .compatible = "rockchip,rk3368-timer" },
 	{}
 };

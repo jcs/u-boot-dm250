@@ -12,7 +12,7 @@
 
 #if CONFIG_IS_ENABLED(TINY_FRAMEWORK) && !defined(CONFIG_ARM64)
 #undef CONFIG_SYS_ARCH_TIMER
-#else
+#elif !defined(CONFIG_ROCKCHIP_RK3128)
 #define CONFIG_SYS_ARCH_TIMER
 #endif
 
